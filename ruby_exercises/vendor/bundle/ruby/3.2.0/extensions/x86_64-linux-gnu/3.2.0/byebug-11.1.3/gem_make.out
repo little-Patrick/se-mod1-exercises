@@ -1,0 +1,22 @@
+current directory: /home/texas_red/Turing/se-mod1-exercises/ruby_exercises/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+/usr/bin/ruby3.2 -I/usr/lib/ruby/vendor_ruby extconf.rb
+creating Makefile
+
+current directory: /home/texas_red/Turing/se-mod1-exercises/ruby_exercises/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20241202-35182-cwvkfo sitelibdir\=./.gem.20241202-35182-cwvkfo clean
+
+current directory: /home/texas_red/Turing/se-mod1-exercises/ruby_exercises/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20241202-35182-cwvkfo sitelibdir\=./.gem.20241202-35182-cwvkfo
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/texas_red/Turing/se-mod1-exercises/ruby_exercises/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20241202-35182-cwvkfo sitelibdir\=./.gem.20241202-35182-cwvkfo install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20241202-35182-cwvkfo/byebug
+
+current directory: /home/texas_red/Turing/se-mod1-exercises/ruby_exercises/vendor/bundle/ruby/3.2.0/gems/byebug-11.1.3/ext/byebug
+make DESTDIR\= sitearchdir\=./.gem.20241202-35182-cwvkfo sitelibdir\=./.gem.20241202-35182-cwvkfo clean
