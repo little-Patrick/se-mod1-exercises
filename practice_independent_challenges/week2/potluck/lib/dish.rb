@@ -1,5 +1,3 @@
-require './lib/dish.rb'
-require './lib/potluck'
 
 class Dish
   attr_accessor :name, :category
