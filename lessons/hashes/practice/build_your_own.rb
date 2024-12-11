@@ -13,3 +13,8 @@
 # 8. Get all the values in your Hash. What kind of object does that method return?
 # 9. Assign a new value to the :vocalist key of your hash.
 # 10. How has keys changed after the last step? How has values changed?
+# 
+
+new_band = {
+    
+}

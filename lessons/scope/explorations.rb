@@ -33,14 +33,7 @@ require 'pry'
 
 ## Example 5
 
-# def print_variable
-#   x = 4
-#   puts x
-# end
 
-# x = 2
-# print_variable
-# puts x
 
 ##
 
