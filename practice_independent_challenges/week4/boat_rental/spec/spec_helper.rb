@@ -1,0 +1,5 @@
+require 'pry'
+require 'rspec'
+require './lib/boat.rb'
+require './lib/renter.rb'
+require './lib/dock.rb'

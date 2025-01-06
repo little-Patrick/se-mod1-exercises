@@ -31,3 +31,9 @@ kardashians << Person.new("Kim", 41, ["North", "Saint", "Chicago", "Psalm"])
 kardashians << Person.new("Kris", 65, ["Kourtney", "Kim", "Khloe", "Rob", "Kendall", "Kylie"])
 kardashians << Person.new("Khloe", 37, ["True"])
 
+require 'pry'
+binding.pry
+
+pp kardashians.sort_by(&:name)
+pp kardashians.min_by(&:name)
+pp kardashians.

@@ -1,4 +1,5 @@
 require 'rspec'
+require 'pry'
 require './lib/bob'
 require './lib/paint'
 
@@ -20,7 +21,7 @@ RSpec.describe Bob do
   describe 'Methods' do
     it 'can add paint' do
       bob = Bob.new
-      paint_1 = Paint.new("Alizarin Crimson")
+      paint_1 = double("my first paint")
       paint_2 = Paint.new("Van Dyke Brown")
 
       bob.add_paint(paint_1)
@@ -54,5 +55,17 @@ RSpec.describe Bob do
     end
   end
 
+  it "can return paint colors" do
+    bob = Bob.new
+    paint_1 = double("my first paint")
+    paint_2 = double("my second paint")
+  
+    bob.add_paint(paint_1)
+    bob.add_paint(paint_2)
+    binding.pry
+  
+    expect(bob.paint_colors).to eq(["Alizarin Crimson", "Van Dyke Brown"])
+  end
+  
 
 end
