@@ -24,4 +24,22 @@ class ColoradoLottery
       false
     end
   end
+
+  def register_contestant(contestant, game)
+    if can_register?(contestant, game)
+      @registered_contestants[game] ||= []
+      @registered_contestants[game] << contestant
+    else 
+      false
+    end
+
+  end
+
+  # def eligible_contestants
+
+  # end
+
+  # def current_contestants
+    
+  # end
 end

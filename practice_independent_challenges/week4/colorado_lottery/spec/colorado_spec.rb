@@ -71,9 +71,18 @@ RSpec.describe ColoradoLottery do
     end
   end
 
-  describe 'i4 methods' do
-    it' can register' do
-      expect(@lottery.registered_contestant).to eq()
+  describe 'i3 methods' do
+    it 'can register' do
+      @lottery.register_contestant(@alexander, @pick_4)
+      expect(@lottery.registered_contestant).to eq({@pick_4 => [@alexander]})
+    end
+    it 'can register more than one person' do
+      @winston.add_game_interest('Pick 4')
+      @lottery.register_contestant(@winston, @pick_4)
+      @lottery.register_contestant(@alexander, @pick_4)
+      @lottery.register_contestant(@frederick, @mega_millions)
+
+      expect(@lottery.registered_contestants).to eq({@pick_4 => [@winston, @alexander], @mega_millions => [@frederick]})
     end
   end
 end
