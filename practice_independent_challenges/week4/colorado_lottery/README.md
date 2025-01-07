@@ -46,7 +46,7 @@ pry(main)> alexander = Contestant.new({first_name: 'Alexander',
 #=> <Contestant:0x007ff87ac0a498...>
 
 pry(main)> alexander.full_name
-#=> "Alexander Aigiades"
+#=> "Alexander Aigiades" 
 
 pry(main)> alexander.age
 #=> 28
@@ -169,7 +169,7 @@ pry(main)> lottery.can_register?(alexander, cash_5)
 pry(main)> lottery.can_register?(frederick, mega_millions)
 #=> true
 
-pry(main)> lottery.can_register?(benjamin, mega_millions)
+pry(main)> lottery.can_register?(frederick, mega_millions)
 #=> false
 
 pry(main)> lottery.can_register?(frederick, cash_5)

@@ -3,12 +3,14 @@
 class Dock 
   attr_reader :name,
               :max_rental_time,
-              :rental_log
+              :rental_log,
+              :revenue
 
   def initialize(name, time)
     @name = name
     @max_rental_time = time
     @rental_log = {}
+    @revenue = 0
   end
 
   def rent(boat, person)
@@ -26,13 +28,21 @@ class Dock
       charge[:card_number] = @rental_log[boat].credit_card_number
       charge[:amount] = boat.price_per_hour * @max_rental_time
     end
+    @revenue += charge[:amount]
     return charge
   end
 
   def return_boat(boat)
-    binding.pry
-    boat.hours_rented = 0 
-    boat.rented = false
-    @rental
+    charge(boat)
+    boat.boat_return
+    @rental_log.delete(boat)
+  end
+
+  def log_hour
+    @rental_log.each_key {|x| x.add_hour}
+  end
+
+  def revenue
+    @revenue
   end
 end

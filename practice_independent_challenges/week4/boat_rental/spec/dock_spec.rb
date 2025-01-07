@@ -77,4 +77,10 @@ RSpec.describe Dock do
       expect(@kayak_1.rented?).to eq(false)
     end
   end
+
+  describe 'log' do 
+    it 'adds hours' do
+      @dock.log_hour
+    end
+  end
 end
